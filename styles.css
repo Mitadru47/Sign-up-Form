@@ -50,7 +50,9 @@ img{
 }
 
 .sectionA p{
+    
     font-size: 1.2rem;
+    font-family: 'Mooli', sans-serif;
 }
 
 #sectionB{
@@ -60,7 +62,15 @@ img{
 }
 
 .sectionB p{
+
     font-size: 1.25rem;
+    font-family: 'Mooli', sans-serif;
+}
+
+label{
+
+    font-size: 0.7rem;
+    font-family: 'Libre Baskerville', serif;
 }
 
 td{
@@ -82,4 +92,30 @@ input{
 
 #sectionC{
     padding-top: 40px;
+}
+
+button{
+
+    padding: 10px 40px;
+
+    border: 0;
+    border-radius: 2px;
+
+    background-color: #D83F31;
+    color: white;
+
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #C70039;
+}
+
+a{
+    text-decoration: none;
+    color: #D83F31;
+}
+
+a:hover{
+    color: #C70039;
 }
