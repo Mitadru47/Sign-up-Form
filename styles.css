@@ -1,11 +1,18 @@
 html{
     
-    border: 1px solid green;
-    margin: 5px;
+    /* border: 1px solid green; */
 }
 
 body{
-    border: 1px solid blue;
+
+    margin: 0;
+    /* border: 1px solid blue; */
+}
+
+img{
+
+    z-index: 1;
+    height: 100vh;
 }
 
 .flex-container{
@@ -15,13 +22,13 @@ body{
 .flex-container div{
 
     /* height: 100vh; */
+    /* margin: 5px; */
 
-    margin: 5px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .sideA{
-    width: 30%;
+    /* width: 30%; */
 }
 
 .sideB{
@@ -33,5 +40,46 @@ body{
 }
 
 .sideB div{
-    border: 1px solid purple;
+
+    /* border: 1px solid purple; */
+    padding: 20px;
+}
+
+.content{
+    padding-top: 10%;
+}
+
+.sectionA p{
+    font-size: 1.2rem;
+}
+
+#sectionB{
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 10px 1px rgba(128,128,128,0.2), 1px 5px 5px 1px rgba(128,128,128,0.2);
+}
+
+.sectionB p{
+    font-size: 1.25rem;
+}
+
+td{
+
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+input{
+   
+    padding: 0;
+
+    width: 240px;
+    height: 25px;
+    
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 2px;
+}
+
+#sectionC{
+    padding-top: 40px;
 }
