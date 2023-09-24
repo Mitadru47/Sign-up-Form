@@ -1,5 +1,4 @@
 html{
-    
     /* border: 1px solid green; */
 }
 
@@ -7,12 +6,6 @@ body{
 
     margin: 0;
     /* border: 1px solid blue; */
-}
-
-img{
-
-    z-index: 1;
-    height: 100vh;
 }
 
 .flex-container{
@@ -31,12 +24,45 @@ img{
     /* width: 30%; */
 }
 
+#logo{
+
+    position: absolute;
+    top: 15%;
+
+    width: 80vw;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    font-size: 1.5rem;
+    font-family: 'Skranji', cursive;
+
+    padding-left: 100px;
+}
+
+img{
+    height: 100vh;
+}
+
+#credits{
+
+    position: absolute;
+    bottom: 1px;
+
+    padding-left: 15px;
+    font-size: 0.8rem;
+}
+
 .sideB{
 
     width: 70%;
     display: flex;
 
     flex-direction: column;
+
+    background-color: white;
+    z-index: 2;
 }
 
 .sideB div{
@@ -82,6 +108,7 @@ td{
 input{
    
     padding: 0;
+    padding-left: 6px;
 
     width: 240px;
     height: 25px;
@@ -90,8 +117,24 @@ input{
     border-radius: 2px;
 }
 
+input:focus{
+
+    outline: none;
+    
+    border: 1px solid blue;
+    border-radius: 2px;
+
+    box-shadow: 1px 2px 5px 2px rgba(128, 128, 128, 0.25);
+}
+
+span{
+    color: red;
+}
+
 #sectionC{
+
     padding-top: 40px;
+    padding-bottom: 0px;
 }
 
 button{
@@ -118,4 +161,17 @@ a{
 
 a:hover{
     color: #C70039;
+}
+
+footer p{
+
+    margin: 0;
+    
+    padding: 15px;
+    padding-top: 5px;
+    
+    text-align: end;
+    font-size: 0.8rem;
+
+    background-color: whitesmoke;
 }

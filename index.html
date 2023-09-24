@@ -10,17 +10,32 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mooli&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mooli&family=Skranji&display=swap">
 
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     </head>
     <body>
 
-        <div class="flex-container">
+        
 
+        <div class="flex-container">
+            
             <div class="sideA">
 
-                <img src="./Assets/pexels-caio-12732558.jpg"> 
+                <div id="logo">
 
+                    <h1><i class="fi fi-br-world"></i> rAndom . .</h1>
+                
+                </div>
+
+               <img src="./Assets/pexels-caio-12732558.jpg"> 
+               
+                <p id="credits">
+                
+                    Photo by <a href="https://www.pexels.com/@caio/">Caio</a> on <a href="https://www.pexels.com/">Pexels</a>
+               
+                </p>
+               
             </div>
 
             <div class="sideB">
@@ -29,87 +44,98 @@
             
                     <strong>
                    
-                        <p class="content"> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-                        <p>You <em>know</em> you want to.</p>
+                        <p class="content"> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                        <p>You know you want to.</p>
                    
                     </strong>
 
                 </div>
 
-                <div id="sectionB" class="sectionB">
+                <form>
 
-                    <p>Let's do this!</p>
+                    <div id="sectionB" class="sectionB">
 
-                    <table>
+                        <p>Let's do this!</p>
 
-                        <tr>
+                        <table>
 
-                            <td>
+                            <tr>
 
-                                <label for="fName">First Name</label><br>
-                                <input id="fName "type="text">
+                                <td>
 
-                            </td>
+                                    <label for="fName">First Name<span>*</span></label><br>
+                                    <input id="fName "type="text" required>
 
-                            <td>
+                                </td>
 
-                                <label for="lName">Last Name</label><br>
-                                <input id="lName" type="text">
+                                <td>
 
-                            </td>
+                                    <label for="lName">Last Name<span>*</span></label><br>
+                                    <input id="lName" type="text" required>
 
-                        </tr>
+                                </td>
 
-                        <tr>
+                            </tr>
 
-                            <td>
+                            <tr>
 
-                                <label for="email">Email</label><br>
-                                <input id="email "type="email">
+                                <td>
 
-                            </td>
+                                    <label for="email">Email<span>*</span></label><br>
+                                    <input id="email "type="email" required>
 
-                            <td>
+                                </td>
 
-                                <label for="phone">Phone Number</label><br>
-                                <input id="phone" type="number">
+                                <td>
 
-                            </td>
+                                    <label for="phone">Phone Number</label><br>
+                                    <input id="phone" type="text" pattern="[0-9]{10}" placeholder="(+91) XXXXX XXXXX">
 
-                        </tr>
+                                </td>
 
-                        <tr>
+                            </tr>
 
-                            <td>
+                            <tr>
 
-                                <label for="password">Password</label><br>
-                                <input id="password" type="password">
+                                <td>
 
-                            </td>
+                                    <label for="password">Password<span>*</span></label><br>
+                                    <input id="password" type="password" required>
 
-                            <td>
+                                </td>
 
-                                <label for="confirm">Confirm Password</label><br>
-                                <input id="confirm" type="password">
+                                <td>
 
-                            </td>
+                                    <label for="confirm">Confirm Password<span>*</span></label><br>
+                                    <input id="confirm" type="password" required>
 
-                        </tr>
+                                </td>
 
-                    </table>
+                            </tr>
 
-                </div>
+                        </table>
 
-                <div id="sectionC" class="sectionC">
+                    </div>
 
-                    <button type="submit">Create Account!</button>
-                    <p>Already have an account? <a href="">Log In</a></p>
+                    <div id="sectionC" class="sectionC">
 
-                </div>
+                        <button type="submit">Create Account!</button>
+                        <p>Already have an account? <a href="">Log In</a></p>
+
+                    </div>
+
+                </form>
 
             </div>
 
         </div>
+
+        <footer>
+
+            <p>Created with ❤️ by <strong>Mitadru Gangopadhyay</strong><br>
+            <em>Aspiring Full Stack Developer.</em></p>
+
+        </footer>
 
     </body>
 </html>
