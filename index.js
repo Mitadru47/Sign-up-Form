@@ -6,6 +6,8 @@ var confirmPassword = document.getElementById("confirm");
 var errorMessage = document.getElementById("error-message");
 var errorMessage_blank = document.getElementById("error-message-blank");
 
+var button = document.getElementById("submit");
+
 function showError() {
     
     password.classList.add("error");
@@ -13,6 +15,9 @@ function showError() {
 
     errorMessage.removeAttribute("hidden");
     errorMessage_blank.removeAttribute("hidden");
+
+    button.classList.add("disabled");
+    button.disabled = true;
 }
 
 function removeError() {
@@ -22,6 +27,9 @@ function removeError() {
 
     errorMessage.setAttribute("hidden", true);
     errorMessage_blank.setAttribute("hidden", true);
+
+    button.classList.remove("disabled");
+    button.disabled = false;
 }
 
 password.addEventListener("change", ()=>{

@@ -187,6 +187,10 @@ button:hover{
     background-color: #C70039;
 }
 
+.disabled{
+    background-color: grey;
+}
+
 .sectionC p{
    
     margin-top: 10px;
